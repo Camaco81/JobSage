@@ -3,14 +3,26 @@
 	margin: 0;
 	list-style: none;
 	text-decoration: none;
+	font-family: 'Montserrat', sans-serif
 }
+
+body{
+	background-color:#d0a7b4;
+
+
+}
+
+
 header{
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/modelos-de-negocios-digitales.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
-
+	padding: 50px;
+	color: white;
 }
 
 .hero ul{
@@ -22,8 +34,14 @@ header{
 	margin: 10px;
 }
 
-.red{
+.hero nav{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	background: rgb(246, 224, 248);
 }
+
+.hero img{
+	width: 100px;
+	height: 50px;
+}
+
