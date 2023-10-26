@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section{
+	background-color:#d0a7b4;
+	margin: 20px;
+	border-radius: 30px;
+	padding: 20px;
+}
+form{
+	margin: 10px;
+}
+
+.iniciar-seccion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:#08607e;
+}
+
+.iniciar-seccion label{
+	margin: 5px;
+}
+
+.iniciar-seccion input{
+	border:1px solid gray;
+	border-radius: 20px;
+	padding: 6px;
+}
+.iniciar-seccion img{
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.iniciar-seccion button{
+	border-radius: 20px;
+	padding: 8px;
+	width: 100px;
+	margin: 5px;
+	background-color:#a53a50;
+	border: none;
+	color: white;
+}
+
+.continuar-con{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:#08607e;
+}
+
+.continuar-con  div{
+	display: flex;
+	margin: 10px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+.container a{
+	margin-left: 10px;
+	padding: 5px;
+}
+.facebook-color{
+	color:blue;
+}
+.google-color{
+	color:#a53a50
+}
+

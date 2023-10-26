@@ -29,6 +29,10 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+.registrate{
+	border: 1px solid purple;
+	padding: 10px;
+}
 .hero li{
 	margin: 10px;
 }
