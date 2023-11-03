@@ -14,7 +14,8 @@ body{
 
 section{
 	background-color:#d0a7b4;
-	margin: 20px;
+	width: 60%;
+	margin: 30px;
 	border-radius: 30px;
 	padding: 20px;
 }
@@ -22,7 +23,7 @@ form{
 	margin: 10px;
 }
 
-.iniciar-seccion{
+.crear-cuenta{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -30,22 +31,22 @@ form{
 	color:#08607e;
 }
 
-.iniciar-seccion label{
+.crear-cuenta label{
 	margin: 5px;
 }
 
-.iniciar-seccion input{
+.crear-cuenta input{
 	border:1px solid gray;
 	border-radius: 20px;
 	padding: 6px;
 }
-.iniciar-seccion img{
+.crear-cuenta img{
 	height: 100px;
 	width: 100px;
 	border-radius: 5px;
 }
 
-.iniciar-seccion button{
+.crear-cuenta button{
 	border-radius: 20px;
 	padding: 8px;
 	width: 100px;
@@ -54,6 +55,11 @@ form{
 	border: none;
 	color: white;
 }
+.style-a{
+	cursor: pointer;
+	color:#a53a50;
+
+}
 
 .continuar-con{
 	display: flex;
@@ -61,6 +67,11 @@ form{
 	justify-content: center;
 	align-items: center;
 	color:#08607e;
+}
+
+
+.continuar-con h1{
+	text-align: center;
 }
 
 .continuar-con  div{
@@ -83,6 +94,6 @@ form{
 	color:blue;
 }
 .google-color{
-	color:#a53a50
+	color:#a53a50;
 }
 
