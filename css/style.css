@@ -1,225 +1,262 @@
-*{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
-	background:linear-gradient(#08607e,#a53a50);
-	overflow-x:hidden;
-	overflow-y: auto;
+body {
+  background: linear-gradient(#08607e, #f0395e);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-header{
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/modelos-de-negocios-digitales.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 100px;
-	color: white;
-}
-
-.mostrar{
-	display: block;
+#BIENVENIDA {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/img/modelos-de-negocios-digitales.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: white;
 }
 
 .bienvenida {
-	text-align: center;
-    font-weight: 400;
-    margin-top: 20px;
-    color: white;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 20px;
+  color: white;
+}
+
+.logo-bienvenida {
+  width: 300px;
 }
 
 /* BOTONES REGISTRATE E INICIAR SESION*/
 .botones {
-	margin: 100px;
-    justify-content: space-between;
-    display: flex;
-    padding: 50px;
+  margin: 50px;
 }
 
-.registrate {
-	padding: 5px;
-	opacity: 0.5;
-	border-radius: 5px;
-	border: 2px solid purple;
+.registrate{
 	margin-right: 50px;
-	transition: transform 0.8s ease;
 }
-
+.registrate,
 .iniciar-sesion {
-	padding: 5px;
-	opacity: 0.5;
-	border-radius: 5px;
-	border: 2px solid purple;
-	margin-left: 50px;
-	transition: transform 0.8s ease;
+  padding: 5px;
+  opacity: 0.7;
+  border-radius: 5px;
+  border: 2px solid #f0395e;
+  transition: transform 0.8s ease;
 }
 
-.registrate:hover {
-	opacity: 1;
-	transform: scale(2);
-}
-
+.registrate:hover,
 .iniciar-sesion:hover {
-	opacity: 1;
-	transform: scale(2);
+  opacity: 1;
+  transform: scale(2);
 }
 
-.hero ul{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* HEADER NAVEGACION DENTRO DE LA PAGINA */
+.hero {
+  background-color: white;
+  position: sticky;
+  top: 5px;
+  z-index: 10;
 }
 
-.hero li{
+.hero nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.hero ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero li {
+  margin: 10px;
+}
+
+.hero a {
+  color: #08607e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hero li a:hover {
+  color: #f0395e;
+  transform: scale(1.2);
+  border-radius: 25px;
+}
+
+.hero img {
+  height: 60px;
+}
+
+.icono-oculto {
+  display: none;
+}
+
+.red {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 10px 10px 10px;
+}
+
+.red article {
+  margin: 50px 10px;
+}
+
+.entrevista {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.entrevista article {
+  margin: 10px;
+  direction: rtl;
+}
+.entrevista img {
+  height: 380px;
+}
+
+.mentoria {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.mentoria article {
+  margin: 10px;
+}
+
+.mentoria img {
+  height: 380px;
+}
+
+.cierre {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px
+}
+.botones-cierre {
+  margin: 50px;
+  justify-content: space-around;
+  display: flex;
+  padding: 50px;
+}
+
+footer { 
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+footer strong {
+  color: #a53a50;
+}
+
+footer p {
+  margin: 10px;
+  text-align: center;
+}
+
+footer img {
+  width: 300px;
+  height: auto;
+  display: flex;
+}
+
+footer div {
 	margin: 10px;
-}
-.icono-oculto{
-		display:none;
-}
-.hero{
-background-color: white;
-}
-
-.hero nav{
+	padding: 50px;
 	display: flex;
-	justify-content: space-around;
-	padding:5px ;
-	
-
-}
-
-.hero img{
-	height: 60px;
-}
-
-.red{
-	display: flex;
-	justify-content: space-around;
-	margin: 10px;
-}
-.red article{
-	margin: 50px 10px;
-}
-
-.entrevista{
-	display: flex;
-	justify-content: space-around;
-	margin: 50px;
-}
-
-.entrevista article{
-	margin: 10px;
-	direction: rtl;
-}
-.entrevista img{
-	height: 380px;
-	
-}
-.mentoria{
-	display: flex;
-	justify-content: space-around;
-	margin: 10px;	
-}
-
-.mentoria article{
-	margin: 10px;
-}
-.mentoria img{
-	height: 380px;
-}
-footer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color:white;
-	padding: 10px;
-	color: black;
-}
-
-footer strong{
-	color:#a53a50;
-}
-
-footer p,h3{
-	margin: 10px;
-}
-
-footer img{
-	height: 60px;
-}
-
-.conocenos article{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 100px 10px;
-}
-
-
-
-
-
-@media screen and (min-width:700px){
-	.hero{
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media screen and (max-width:600px){
-
-	.oculto{
-		display: none !important;
-	}
-
-	.boton-and-logo {
-	display: flex;
-	align-items:center;	
 	justify-content: space-between;
 }
-.entrevista img{
-	width: 300px;
-	height: 300px;
-}
 
-.mentoria img{
-	height: 300px;
-	width: 300px;
-}
-
-article{
+footer ul {
 	margin: 10px;
+	display: inline-grid;
 }
 
-.red img{
-	height: 300px;
-	width: 300px;
+.conocenos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 10px;
 }
-.boton-and-logo a,img{
-	/*margin-left:10px ;
+
+@media (max-width: 900px) {
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .oculto {
+    display: none !important;
+  }
+
+  .boton-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .entrevista img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .mentoria img {
+    height: 300px;
+    width: 300px;
+  }
+
+  article {
+    margin: 10px;
+  }
+
+  .red img {
+    height: 300px;
+    width: 300px;
+  }
+  .boton-and-logo a,
+  img {
+    /*margin-left:10px ;
 	margin-right:10px ;*/
-	margin: 10px;
-}
+    margin: 10px;
+  }
 
-.boton-and-logo a{
-	font-size: 20px;
-}
-	#menu{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.icono-oculto{
-		display: flex;
-	}
-
+  .boton-and-logo a {
+    font-size: 20px;
+  }
+  #menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icono-oculto {
+    display: flex;
+  }
 }
