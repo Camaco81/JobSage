@@ -26,8 +26,8 @@ body {
 }
 
 .margen img {
-	height: 50px;
-	margin-left: 10px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 .info {
@@ -73,11 +73,6 @@ body {
   z-index: 10;
 }
 
-/*.contenedor p{
-	color: #08607e;
-	font-weight: 600;
-} */
-
 .userIcon-and-close {
   display: flex;
   justify-content: space-between;
@@ -120,11 +115,12 @@ body {
   font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .contenedor div span {
-	display: none;
-  }
-  .mas-opciones {
-	width: 60%
-  }
+@media screen and (max-width: 700px) {
+	.contenedor span {
+		display: none;
+	}
+
+	.mas-opciones {
+		width: 60%;
+	}
 }
