@@ -109,13 +109,16 @@ section{
 
 @media screen and (max-width: 500px) {
 	.mas-opciones{
-		width: 50%;
+		width: 54%;
 	}
 
 	.contenedor p{
 		font-size: 10px;
 	}
 
+	.mas-opciones p{
+		font-size: 12px;
+	}
 	
 
 }
