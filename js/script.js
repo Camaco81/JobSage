@@ -1,11 +1,12 @@
-let botonDesplegable = document.getElementById('botonDesplegable');
-let menu = document.getElementById('menu');
-let clasOculatar = document.querySelector('.oculto');
-let iconList = document.querySelector('.bi-list')
+// let menu= document.getElementById("menu")
+// let botonOpen=document.getElementById("open");
+// let botonClose=document.getElementById("close");
 
 
-botonDesplegable.addEventListener('click',()=>{
-	menu.classList.toggle('oculto');
-	menu.classList.toggle('motrar');
-	
-});
+// botonOpen.addEventListener("click",()=>{
+// 	menu.style.display="flex";
+// });
+
+// botonClose.addEventListener("click",()=>{
+// 	menu.style.display="none";
+// });

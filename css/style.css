@@ -1,262 +1,330 @@
+/* Reset */
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "Salsa", sans-serif;
+  flex-wrap: wrap;
+}
+
+ul {
   list-style: none;
+}
+
+a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  color: inherit;
+}
+
+main {
+  max-width: 1500px;
+  margin: auto;
 }
 
 body {
-  background: linear-gradient(#08607e, #f0395e);
-  overflow-x: hidden;
-  overflow-y: auto;
+  background: linear-gradient(#08607e, #7025ad, #f0395e);
 }
 
-#BIENVENIDA {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../assets/img/modelos-de-negocios-digitales.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  color: white;
-}
-
-.bienvenida {
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 20px;
-  color: white;
-}
-
-.logo-bienvenida {
-  width: 300px;
-}
-
-/* BOTONES REGISTRATE E INICIAR SESION*/
-.botones {
-  margin: 50px;
-}
-
-.registrate{
-	margin-right: 50px;
-}
-.registrate,
-.iniciar-sesion {
-  padding: 5px;
-  opacity: 0.7;
-  border-radius: 5px;
-  border: 2px solid #f0395e;
-  transition: transform 0.8s ease;
-}
-
-.registrate:hover,
-.iniciar-sesion:hover {
-  opacity: 1;
-  transform: scale(2);
-}
-
-/* HEADER NAVEGACION DENTRO DE LA PAGINA */
-.hero {
-  background-color: white;
-  position: sticky;
-  top: 5px;
-  z-index: 10;
-}
-
-.hero nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 5px;
-}
-
-.hero ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero li {
-  margin: 10px;
-}
-
-.hero a {
-  color: #08607e;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.hero li a:hover {
-  color: #f0395e;
-  transform: scale(1.2);
-  border-radius: 25px;
-}
-
-.hero img {
-  height: 60px;
-}
-
-.icono-oculto {
-  display: none;
-}
-
-.red {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px 10px 10px 10px;
-}
-
-.red article {
-  margin: 50px 10px;
-}
-
-.entrevista {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-}
-
-.entrevista article {
-  margin: 10px;
-  direction: rtl;
-}
-.entrevista img {
-  height: 380px;
-}
-
-.mentoria {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
-}
-
-.mentoria article {
-  margin: 10px;
-}
-
-.mentoria img {
-  height: 380px;
-}
-
-.cierre {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px
-}
-.botones-cierre {
-  margin: 50px;
-  justify-content: space-around;
-  display: flex;
-  padding: 50px;
-}
-
-footer { 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  background-color: white;
-  padding: 10px;
-  color: black;
-}
-
-footer strong {
-  color: #a53a50;
-}
-
-footer p {
-  margin: 10px;
-  text-align: center;
-}
-
-footer img {
-  width: 300px;
-  height: auto;
-  display: flex;
-}
-
-footer div {
-	margin: 10px;
-	padding: 50px;
-	display: flex;
-	justify-content: space-between;
-}
-
-footer ul {
-	margin: 10px;
-	display: inline-grid;
-}
-
-.conocenos article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 10px;
-}
-
-@media (max-width: 900px) {
-}
-
-@media screen and (min-width: 700px) {
-  .hero {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .oculto {
-    display: none !important;
+/*-------------------- MOBILE & TABLETS --------------------*/
+@media (max-width: 700px) {
+  /* HEADER */
+  header {
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
   }
 
-  .boton-and-logo {
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .entrevista img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .mentoria img {
-    height: 300px;
-    width: 300px;
+    background-color: white;
+    position: relative;
+    max-height: 90px;
   }
 
-  article {
-    margin: 10px;
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  .red img {
-    height: 300px;
-    width: 300px;
-  }
-  .boton-and-logo a,
-  img {
-    /*margin-left:10px ;
-	margin-right:10px ;*/
-    margin: 10px;
+  nav ul li {
+    margin: auto;
   }
 
-  .boton-and-logo a {
-    font-size: 20px;
+  .logoH {
+    height: 50px;
   }
-  #menu {
+
+  .menu-desktop {
+    display: none;
+  }
+  #menu-mobile {
+    width: 50%;
+  }
+
+  #BIENVENIDA {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../assets/img/modelos-de-negocios-digitales.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
   }
-  .icono-oculto {
+  div .logo-bienvenida {
     display: flex;
+  }
+
+  .logoBienvenida {
+    width: 300px;
+    margin: 100px auto 0 auto;
+  }
+
+  .bienvenidaP {
+    text-align: center;
+    margin: 0 50px;
+  }
+
+  .botones,
+  .botones-cierre {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .slogan h2 {
+    margin: 20px;
+  }
+
+  /* BOTONES REGISTRATE E INICIAR SESION*/
+  .botones {
+    margin: 10px;
+  }
+
+  .registrate,
+  .iniciar-sesion {
+    padding: 10px;
+    margin: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 2px solid #f0395e;
+    transition: transform 0.8s ease;
+  }
+
+  .registrate:hover,
+  .iniciar-sesion:hover {
+    opacity: 1;
+    transform: scale(2);
+  }
+
+  /* SECCIONES DE CONTACTO */
+  #red {
+    margin-top: 5rem;
+  }
+  #red,
+  #entrevista,
+  #mentoria,
+  #conocenos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .img-red,
+  .img-entrevista,
+  .img-mentoria,
+  .img-conocenos,
+  .img-footer {
+    width: 75%;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer p,
+  footer div {
+    text-align: center;
+    margin: 20px;
+  }
+}
+
+/*-------------------- DESKTOP --------------------*/
+@media (min-width: 701px) {
+  #menu-desktop {
+    display: flex;
+  }
+  #menu-mobile {
+    display: none;
+  }
+
+  /* HEADER */
+  header {
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #menu-desktop li a {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  #menu-desktop li a:hover {
+    color: #f0395e;
+    font-size: 20px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    max-height: 90px;
+  }
+
+  nav ul li {
+    margin: auto 0.5rem;
+  }
+
+  .logoH {
+    height: 50px;
+  }
+
+  #BIENVENIDA {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../assets/img/modelos-de-negocios-digitales.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  div .logo-bienvenida {
+    display: flex;
+  }
+
+  .logoBienvenida {
+    width: 300px;
+    margin: 100px auto 0 auto;
+    /* background: rgba(160, 159, 159, 0.902); */
+  }
+
+  .bienvenidaP {
+    text-align: center;
+    margin: 0 50px;
+  }
+  
+  .slogan h2 {
+    margin: 20px;
+  }
+
+  /* BOTONES REGISTRATE E INICIAR SESION*/
+  .botones {
+    margin: 10px;
+  }
+
+  .botones,
+  .botones-cierre {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .registrate,
+  .iniciar-sesion {
+    padding: 10px;
+    margin: 80px;
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 2px solid #f0395e;
+    transition: transform 0.8s ease;
+  }
+
+  .registrate:hover,
+  .iniciar-sesion:hover {
+    opacity: 1;
+    transform: scale(2);
+    background-color: #f0395e;
+    color: white;
+  }
+
+  /* SECCIONES DE CONTACTO */
+  #red {
+    margin-top: 5rem;
+  }
+  #red,
+  #entrevista,
+  #mentoria,
+  #conocenos {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #entrevista,
+  #conocenos {
+    direction: rtl;
+  }
+
+  .article-red,
+  .article-entrevista,
+  .article-mentoria,
+  .article-conocenos {
+    color: #f0395e;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-red,
+  .img-entrevista,
+  .img-mentoria,
+  .img-conocenos,
+  .img-footer {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer p,
+  footer div {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fin ul {
+    margin-top: auto;
+
+  .fin ul li a:hover {
+    color: rgb(182, 57, 240);
+    font-size: 20px;
   }
 }

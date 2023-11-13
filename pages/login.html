@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,59 +10,41 @@
 	<link rel="stylesheet" href="../css/login.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+		rel="stylesheet">
 </head>
 </head>
+
 <body>
-	
-	<section id="crearCuenta">
-		<form action="" class="crear-cuenta" id="crear">
-		<img src="../assets/img/logo-jobsage-2 .png" alt="JobsAge">	
-         <h1>Crear una cuenta</h1>
-		<label for="">Correo</label>
-		<input type="text">
-		<label for="">Contraseña</label>
-		<input type="text">
-		<label for="">Confirmar contraseña</label>
-		<input type="text">
-		<button type="submit">Registo</button>
+	<section id="iniciarCuenta">
+		<form action="post" class="crear-cuenta">
+			<h1>Iniciar sesión</h1>
+			<label for=""></label>
+			<input type="email" placeholder="Correo Electrónico">
+			<label for=""></label>
+			<input id="myInput" type="password" placeholder="Contraseña">
+			<div>
+				<input type="checkbox" onclick="myFunctionLogin()">Mostrar Contraseña
+			</div>
+			<button type="submit"><a href="./trabajo.html">Iniciar</a></button>
 
-		<p>¿Ya tienes una cuenta? Inicia Sesión <a id="botonCambio1" class="style-a">aqui</a></p>
+			<p>¿No tienes una cuenta? </p>
+			<p>¡Registrate! <a href="./register.html" id="botonCambio2" class="style-a">AQUI</a></p>
 		</form>
 
-		
+		<h1>También puedes continuar con: </h1>
 
-	</section>
-	<section style="display: none;" id="iniciarCuenta" >
-
-		<form action="" class="crear-cuenta">
-		<img src="../assets/img/logo-jobsage-2 .png" alt="">	
-         <h1>Iniciar sección</h1>
-		<label for="">Nombre de usuario</label>
-		<input type="text">
-		<label for="">Contraseña</label>
-		<input type="text">
-		<button type="submit">Iniciar</button>
-
-		<p>No tienes una cuenta registrate  <a id="botonCambio2" class="style-a">aqui</a></p>
-		</form>
-
-		<form action="" class="continuar-con">
-			<h1>También puedes continuar con</h1>
-
-			<div class="container">
-				<p>Continuar con google</p>
-				<a href="" class="google-color"><i class="bi bi-google"></i></a>
-			</div>
-			<div class="container">
-				<p>Continuar con facebook</p>
-				<a href="" class="facebook-color"><i class="bi bi-facebook"></i></a>
-			</div>
+		<div class="container">
+			<button><a href="#" class="google-color">Google <i class="bi bi-google"></i></a></button>
+		</div>
+		<div class="container">
+			<button><a href="#" class="facebook-color">Facebook <i class="bi bi-facebook"></i></a></button>
 			
-		</form>
-		
+		</div>
 
 	</section>
 	<script src="../js/login.js"></script>
 </body>
+
 </html>

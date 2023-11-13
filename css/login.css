@@ -15,50 +15,57 @@ body{
 section{
 	background-color:#d0a7b4;
 	width: 60%;
-	margin: 30px;
+	margin: 10px;
 	border-radius: 30px;
-	padding: 20px;
+	padding: 30px;
 }
 form{
 	margin: 10px;
 }
 
 .crear-cuenta{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color:#08607e;
-}
-
-.crear-cuenta label{
-	margin: 5px;
+	display: grid;
+    color: #08607e;
+    justify-content: center;
+    justify-items: center;
 }
 
 .crear-cuenta input{
 	border:1px solid gray;
 	border-radius: 20px;
 	padding: 6px;
+	margin: 5px;
 }
-.crear-cuenta img{
-	height: 100px;
-	width: 100px;
-	border-radius: 5px;
+img{
+	width: 200px;
+	height: auto;
 }
 
-.crear-cuenta button{
+.crear-cuenta button {
 	border-radius: 20px;
-	padding: 8px;
-	width: 100px;
-	margin: 5px;
+	padding: 10px;
+	margin: 10px;
 	background-color:#a53a50;
 	border: none;
+	transition: transform 0.8s ease;
+}
+
+.crear-cuenta button a {
 	color: white;
 }
-.style-a{
+
+.crear-cuenta button:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    background-color: #f0395e;
+    color: white;
+  }
+
+
+.style-a {
 	cursor: pointer;
 	color:#a53a50;
-
+	text-decoration: none;
 }
 
 .continuar-con{
@@ -69,8 +76,7 @@ form{
 	color:#08607e;
 }
 
-
-.continuar-con h1{
+h1{
 	text-align: center;
 }
 
@@ -78,13 +84,21 @@ form{
 	display: flex;
 	margin: 10px;
 }
-.container{
+.container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+}
+
+.container button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #a53a50;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 20px;
+	margin: 10px;
+	border: none;
 }
 .container a{
 	margin-left: 10px;
@@ -94,6 +108,6 @@ form{
 	color:blue;
 }
 .google-color{
-	color:#a53a50;
+	color: red;
 }
 
