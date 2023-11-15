@@ -20,20 +20,40 @@
 	<section id="iniciarCuenta">
 		<form action="post" class="crear-cuenta">
 			<h1>Iniciar sesión</h1>
-			<label for=""></label>
-			<input type="email" placeholder=" 📧 Correo Electrónico">
-			<label for=""></label>
-			<input id="myInput" type="password" placeholder=" 🔒 Contraseña">
-			<div>
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo"
+						placeholder=" 📧 email@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+					guion bajo.</p>
+			</div>
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder=" 🔒 Contraseña">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+			<div class="checkbox">
 				<input type="checkbox" onclick="myFunctionLogin()">Mostrar Contraseña
 			</div>
-			<button type="submit"><a href="./trabajo.html">Iniciar</a></button>
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn"><a href="./trabajo.html">Iniciar</a></button>
+				<!-- <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p> -->
+			</div>
 
-			<p>¿No tienes una cuenta? </p>
-			<p>¡Registrate! <a href="./register.html" id="botonCambio2" class="style-a">AQUI</a></p>
+			<div class="p">
+				<p>¿Aun no tienes una cuenta?</p>
+				<p class="aqui">Registrate <a href="./register.html" id="botonCambio1" class="style-a">AQUI</a></p>
+			</div>
 		</form>
 
-		<h1>También puedes continuar con: </h1>
+		<!-- <h1>También puedes continuar con: </h1>
 
 		<div class="container">
 			<button><a href="#" class="google-color">Google <i class="bi bi-google"></i></a></button>
@@ -41,8 +61,7 @@
 		<div class="container">
 			<button><a href="#" class="facebook-color">Facebook <i class="bi bi-facebook"></i></a></button>
 			
-		</div>
-
+		</div> -->
 	</section>
 	<script src="../js/login.js"></script>
 </body>
