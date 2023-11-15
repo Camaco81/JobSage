@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 }
 
 .info h2 {
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .info p {
@@ -71,6 +72,10 @@ body {
 
 .contenedor div i {
   z-index: 10;
+}
+
+.contenedor i{
+	color: black;
 }
 
 .userIcon-and-close {
@@ -113,6 +118,14 @@ body {
   margin-right: 10px;
   color: black;
   font-size: 20px;
+}
+
+.mas-opciones p>i.bi-box-arrow-left{
+	color: red;
+}
+
+.mas-opciones p >a{
+	color: red;
 }
 
 @media screen and (max-width: 700px) {
