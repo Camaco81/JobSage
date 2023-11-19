@@ -60,6 +60,8 @@ a {
 
 .formulario__grupo-input {
 	position: relative;
+	display: flex;
+    justify-content: center;
 }
 
 .formulario__input {
@@ -109,8 +111,7 @@ a {
 }
 
 .formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
+	height: auto;
 	background: #F66060;
 	padding: 0 15px;
 	border-radius: 3px;
@@ -123,6 +124,7 @@ a {
 
 .formulario__mensaje p {
 	margin: 0;
+	text-align: center;
 }
 
 .formulario__grupo-btn-enviar {
@@ -133,15 +135,27 @@ a {
 
 .formulario__btn {
 	height: 45px;
-	line-height: 45px;
-	width: 30%;
+    line-height: 45px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    padding: 5px;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+button.formulario__btn {
+    width: 50%;
 	background: #bb2929;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 20px;
-	cursor: pointer;
-	transition: .1s ease all;
+	margin: 10px;
+}
+
+.formulario__btn a {
+	width: 100%;
 }
 
 .formulario__btn:hover {
@@ -150,8 +164,9 @@ a {
 
 .formulario__mensaje-exito {
 	font-size: 14px;
-	color: #119200;
+	color: #0f7201;
 	display: none;
+	background-color: #80f88a;
 }
 
 .formulario__mensaje-exito-activo {
@@ -188,9 +203,5 @@ a {
 	.formulario__mensaje,
 	.formulario__grupo-btn-enviar {
 		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
 	}
 }
