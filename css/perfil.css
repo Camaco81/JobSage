@@ -1,0 +1,37 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+	color: #08607e;
+}
+
+h2{
+	margin-bottom: 5px;
+}
+
+section{
+	border: 1px solid gray;
+	border-radius: 20px;
+	margin: 10px;
+}
+section div{
+	margin: 10px;
+}
+.información-de-contacto{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+input{
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+p{
+	margin-bottom: 5px;
+}

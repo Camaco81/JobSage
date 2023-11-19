@@ -6,38 +6,42 @@
 	<title>JobSage</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 		<script src="https://kit.fontawesome.com/eb442954bf.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../css/perfil.css">
 
 </head>
 <body>
 	<section>
 		<h1>Agregar información o personalizar perfil</h1>
-		<div>
-			<a href=""><i class="bi bi-person-fill"></i></a>
-			<a >informacion de contacto: </a>
-			<a href="">Correo</a>
-			<a href="">Facebook</a>
-			<a href="">Instagram</a>
+		<div class="información-de-contacto">
+			<h2> Informacion de contacto: </h2>
+			<input type="text" placeholder="Correo"></input type="text" placeholder="">
+			<input type="text" placeholder="Facebook"></input type="text" placeholder="">
+			<input type="text" placeholder="Instagram"></input type="text" placeholder="">
 		</div>
-		<form action="">
-			<p>Grado de estudio</p>
-			<p>Pregrado</p><input type="checkbox">
-			<p>Postgrado</p><input type="checkbox">
-			<p>Universidad</p><input type="text">
-			<p>Experiencia laboral(años de experiencia)</p>
-			<label for="">5</label><input type="checkbox">
-			<label for="">10</label><input type="checkbox">
-			<p>Compañias en las que has trabajado</p>
-			<input type="text">
-			<p>Cursos relizados</p>
-			<p>Certificacion</p>
-			<P>Area de desempeño laboral</P>
-			<label for="">Informatica</label><input type="checkbox">
-			<label for="">Administracion de empresas</label><input type="checkbox">
-			<label for="">Salud</label><input type="checkbox">
-			<label for="">Otra</label><input type="checkbox">
-		</form>
-		<button type="submit">Guardar informacion</button>
+		<div class="estudios">
+			<h2> Educación: </h2>
+			<input type="text" placeholder="Institución educativa/Universidad">
+			<input type="text" placeholder="Titulación">
+			<input type="text" placeholder="Diciplina académica">
+			<input type="text" placeholder="Año de inicio">
+			<input type="text" placeholder="Año de finalización">
+			<input type="text" placeholder="Cursos realizados">
+			<input type="text" placeholder="Código de certificación">
+		</div>
+		<div class="habilidades">
+			<h2>Habilidades:</h2>
+			<p>Menciona tus habilidades en el area o sector en el que te especializas</p>
+			<input type="text" placeholder="Mis habilidades son">
+		</div>
+
+		<div class="experiencia">
+			<h2>Experiencia:</h2>
+			<input type="number" placeholder="Años de experiencia">
+			<input type="text" placeholder="Trabajos anteriores">
+		</div>
 
 	</section>
+	<button type="submit">Guardar informacion</button>
+
 </body>
 </html>
