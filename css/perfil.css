@@ -1,11 +1,13 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-family: 'Montserrat', sans-serif
 }
 
 h1{
 	text-align: center;
 	color: #08607e;
+	margin: 5px;
 }
 
 h2{
@@ -35,3 +37,30 @@ input{
 p{
 	margin-bottom: 5px;
 }
+
+.boton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button{
+	background-color:#08607e;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+	color: white;
+	border: none;
+}
+
+
+/* ------------  Mobile ------------ */
+@media screen and (max-width: 500px) {
+	section div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+}
+
