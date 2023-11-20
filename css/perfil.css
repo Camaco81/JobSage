@@ -4,29 +4,33 @@
 	font-family: 'Montserrat', sans-serif
 }
 
+i > a {
+	text-decoration: none;
+	color: white;
+}
+
 h1{
 	text-align: center;
 	color: #08607e;
-	margin: 5px;
+	margin: 20px 5px;
 }
 
 h2{
 	margin-bottom: 5px;
+	
 }
 
 section{
 	border: 1px solid gray;
 	border-radius: 20px;
-	margin: 10px;
+	margin: 10px auto;
+	background-color:#d0a7b4;
+	width: 70%;
+	border-radius: 30px;
+	padding: 30px;
 }
 section div{
 	margin: 10px;
-}
-.información-de-contacto{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-start;
 }
 
 input{
@@ -45,21 +49,37 @@ p{
 }
 
 button{
-	background-color:#08607e;
+	background-color: #d0a7b4;
 	border-radius: 10px;
-	padding: 5px;
-	margin: 10px;
+	padding: 10px;
+	margin: 10px auto;
 	color: white;
 	border: none;
+	width: 50%;
+	border: 1px solid gray;
+}
+
+button a {
+	text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
 /* ------------  Mobile ------------ */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	section div{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	h2 {
+		text-align: center;
 	}
 
 }

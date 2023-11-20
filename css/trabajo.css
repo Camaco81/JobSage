@@ -10,6 +10,11 @@ body {
   background: #d0a7b4;
 }
 
+.contenedor div i:hover, .contenedor div a:hover {
+  color: #f0395e;
+  transform: scale(1.2);
+  font-size: 20px;
+}
 .margen {
   display: flex;
   justify-content: space-between;
@@ -49,25 +54,14 @@ body {
   margin: 10px;
 }
 
-.margen i {
-  margin: 10px;
-  font-size: 30px;
-}
-
 .contenedor {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 5px;
   background-color: #fff;
   width: 100%;
   height: 50px;
   padding: 10px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 10;
-  color: #08607e;
-  font-weight: 600;
 }
 
 .contenedor div i {
@@ -118,14 +112,6 @@ body {
   margin-right: 10px;
   color: black;
   font-size: 20px;
-}
-
-.mas-opciones p>i.bi-box-arrow-left{
-	color: red;
-}
-
-.mas-opciones p >a{
-	color: red;
 }
 
 @media screen and (max-width: 700px) {

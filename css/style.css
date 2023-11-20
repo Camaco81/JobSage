@@ -26,6 +26,7 @@ main {
 
 body {
   background: linear-gradient(#08607e, #7025ad, #f0395e);
+  scroll-behavior: smooth;
 }
 
 /*-------------------- MOBILE & TABLETS --------------------*/
@@ -233,13 +234,18 @@ body {
     /* background: rgba(160, 159, 159, 0.902); */
   }
 
+  h1.bienvenidaH1 {
+    text-transform: uppercase;
+    margin: 10px;
+  }
+
   .bienvenidaP {
     text-align: center;
     margin: 0 50px;
   }
   
   .slogan h2 {
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
   }
 
   /* BOTONES REGISTRATE E INICIAR SESION*/
@@ -318,20 +324,15 @@ body {
     justify-content: space-around;
   }
 
-  footer p{
-    color: white;
-  }
-
-  footer ul{
+  footer p, footer ul {
     color: white;
   }
 
   .fin ul {
     margin-top: auto;
-
+  }
   .fin ul li a:hover {
     color: rgb(182, 57, 240);
     font-size: 20px;
   }
-}
 }
