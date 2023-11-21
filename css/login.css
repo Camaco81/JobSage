@@ -13,7 +13,7 @@ body{
 }
 
 section{
-	background-color:#d0a7b4;
+	background-color:rgb(125, 123, 123);;
 	width: 60%;
 	margin: 10px;
 	border-radius: 30px;
@@ -29,15 +29,18 @@ h1 {
 }
 
 a {
-	color: white;
+	color: rgb(22, 21, 21);
+	color: rgb(229, 63, 63)
 }
 
 .aqui {
 	text-align: center;
+
 }
 
 .p {
-	margin: 10px
+	margin: 10px;
+	
 }
 
 .checkbox {
@@ -78,7 +81,7 @@ a {
 .formulario__input:focus {
 	border: 3px solid #0075FF;
 	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+	box-shadow: 3px 0px 30px rgba(205, 203, 203, 0.4);
 }
 
 .formulario__input-error {
@@ -112,7 +115,7 @@ a {
 
 .formulario__mensaje {
 	height: auto;
-	background: #F66060;
+	color: rgb(113, 112, 112);
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
@@ -136,7 +139,7 @@ a {
 .formulario__btn {
 	height: 45px;
     line-height: 45px;
-    color: #fff;
+    color: #0f0e0e;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -150,12 +153,13 @@ a {
 
 button.formulario__btn {
     width: 50%;
-	background: #bb2929;
+	color: rgb(131, 129, 129)
 	margin: 10px;
 }
 
 .formulario__btn a {
 	width: 100%;
+	color: black;
 }
 
 .formulario__btn:hover {
@@ -180,11 +184,11 @@ button.formulario__btn {
 }
 
 .formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+	color: rgb(193, 191, 191)
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
+	color: rgb(182, 180, 180)
 	opacity: 1;
 }
 
