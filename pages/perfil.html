@@ -16,7 +16,8 @@
 </head>
 <body>
 	<section>
-		<i class="bi bi-arrow-bar-left"><a href="./trabajo.html">Volver atras</a></i>
+		<form action="">
+			<i class="bi bi-arrow-bar-left"><a href="./trabajo.html">Volver atras</a></i>
 		<h1>Agregar información o personalizar perfil</h1>
 		<div class="información-de-contacto">
 			<h2> Informacion de contacto: </h2>
@@ -38,10 +39,9 @@
 		</div>
 		<div class="habilidades">
 			<h2>Habilidades:</h2>
-			<p>Menciona tus habilidades en el area o sector en el que te especializas</p>
-			<input type="text" placeholder="Mis habilidades son">
+			<p></p>
+			<textarea name="comentario" id="comentario" width="100%" cols="50" rows="7" minlength="10" maxlength="500" placeholder="Menciona tus habilidades en el area o sector en el que te especializas " required></textarea>
 		</div>
-
 		<div class="experiencia">
 			<h2>Experiencia Laboral:</h2>
 			<input type="text" placeholder="Nombre de la empresa">
@@ -49,10 +49,12 @@
 			<input type="text" placeholder="Cargo">
 		</div>
 
+		<div class="formulario__grupo formulario__grupo-btn-enviar">
+			<button type="submit" class="formulario__btn"><a href="./trabajo.html">Iniciar</a></button>
+		</div>
+		</form>
+		
 	</section>
-	<div class="boton">
-		<button type="submit"><a href="./trabajo.html">Guardar informacion</a></button>
-	</div>
 
 </body>
 </html>
