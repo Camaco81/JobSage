@@ -166,6 +166,12 @@ body {
     margin: 20px;
     color: rgb(74, 73, 73);
   }
+  footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .fin{
     width: 400px;
     margin-left: 150px;
@@ -199,6 +205,8 @@ body {
 
   #menu-desktop li a:hover {
     color: #060606;
+    font-weight: bold;
+
     font-size: 20px;
   }
 
@@ -339,8 +347,9 @@ body {
   }
 
   footer p, footer ul {
-    color: rgb(58, 57, 57);
-  }
+    color: rgb(74, 73, 73);
+      }
+
 
   .fin ul {
     margin-top: auto;
@@ -353,4 +362,6 @@ body {
     width: 300px;
     margin-bottom: 30px;
   }
+
+  
 }

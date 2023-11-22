@@ -6,12 +6,12 @@
 
 i > a {
 	text-decoration: none;
-	color: white;
+	color: gray;
 }
 
 h1{
 	text-align: center;
-	color: #08607e;
+	color: rgb(74, 73, 73)
 	margin: 20px 5px;
 }
 
@@ -24,7 +24,7 @@ section{
 	border: 1px solid gray;
 	border-radius: 20px;
 	margin: 10px auto;
-	background-color:#d0a7b4;
+    background: linear-gradient( #eae7ec, #d1d0d0);;
 	width: 70%;
 	border-radius: 30px;
 	padding: 30px;
