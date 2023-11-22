@@ -92,6 +92,7 @@ a {
 
 .formulario__input-error-activo {
 	display: block;
+	color: #bb2929;
 }
 
 .formulario__validacion-estado {
@@ -101,6 +102,7 @@ a {
 	z-index: 100;
 	font-size: 16px;
 	opacity: 0;
+	color: #bb2929;
 }
 
 .formulario__checkbox {
@@ -128,6 +130,7 @@ a {
 .formulario__mensaje p {
 	margin: 0;
 	text-align: center;
+	color: red;
 }
 
 .formulario__grupo-btn-enviar {
@@ -188,7 +191,7 @@ button.formulario__btn {
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: rgb(182, 180, 180);
+	color: #bb2929;
 	opacity: 1;
 }
 

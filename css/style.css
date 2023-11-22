@@ -126,13 +126,13 @@ body {
     opacity: 0.8;
     border-radius: 10px;
     border: 2px solid #3d3b3b;
-    transition: transform 0.8s ease;
+    transition: transform 0.5s ease;
   }
 
   .registrate:hover,
   .iniciar-sesion:hover {
     opacity: 1;
-    transform: scale(2);
+    transform: scale(1.5);
   }
 
   /* SECCIONES DE CONTACTO */
