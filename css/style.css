@@ -142,7 +142,7 @@ body {
   #red,
   #entrevista,
   #mentoria,
-  #conocenos {
+  #conocenos, #fin {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -179,6 +179,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .fin {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -356,13 +361,14 @@ body {
 
   footer p, footer ul {
     color: rgb(74, 73, 73);
-      }
-
-
-  .fin ul {
-    margin: auto;
   }
-  .fin ul li a:hover {
+
+  .fin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fin > a:hover {
     color: rgb(145, 142, 147);
     font-size: 20px;
   }
