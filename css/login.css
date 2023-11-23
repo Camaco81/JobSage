@@ -177,7 +177,7 @@ button.formulario__btn {
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+	box-shadow: 3px 0px 30px rgb(66, 66, 66);
 }
 
 .formulario__mensaje-exito {
@@ -185,6 +185,7 @@ button.formulario__btn {
 	color: #0f7201;
 	display: none;
 	background-color: #80f88a;
+	text-align: center;
 }
 
 .formulario__mensaje-exito-activo {
