@@ -48,6 +48,17 @@ a {
 	margin: 10px;
 }
 
+/* Verificar en iniciar sesion */
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
+/* -------------------------------------------- */
+
 .formulario {
 	display: flex;
 	flex-direction: column;

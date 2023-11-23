@@ -11,10 +11,6 @@
   flex-wrap: wrap;
 }
 
-html {
-  width: auto;
-}
-
 ul {
   list-style: none;
 }
@@ -23,11 +19,6 @@ a {
   text-decoration: none;
   color: inherit;
   margin: 6px;
-}
-
-main {
-  max-width: 1500px;
-  margin: auto;
 }
 
 body {
@@ -44,23 +35,26 @@ body {
     top: 0;
     width: 100vh;
     z-index: 10;
+    background-color: white;
   }
 
   nav {
-    background-color: white;
     max-height: 90px;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   nav ul {
     display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     margin-right: 20px;
   }
 
   nav ul li {
-    margin: auto;
+    display: flex;
   }
 
   .logoH {
@@ -107,7 +101,9 @@ body {
   .botones-cierre {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px auto;
+    width: 50%;
+    align-content: center;
   }
 
   .slogan h2 {
@@ -146,7 +142,8 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    color: rgb(74, 73, 73);
+    color: rgb(44, 44, 44);
+    margin: 0 50px;
   }
 
   .img-red,
@@ -157,6 +154,7 @@ body {
     width: 70%;
     margin-top: 20px;
     border-radius: 10px;
+    box-shadow: 6px 6px 10px #141414;
   }
   .img-conocenos{
     max-height: 400px;
@@ -182,8 +180,7 @@ body {
   }
 
   .fin {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
   }
 }
 
@@ -227,10 +224,6 @@ body {
     background-color: white;
     position: relative;
     max-height: 90px;
-  }
-
-  nav ul li {
-    margin: auto 0.5rem;
   }
 
   .logoH {
@@ -342,9 +335,10 @@ body {
   .img-conocenos,
   .img-footer {
     width: 40%;
-    margin-top: 20px;
+    margin-top: 25px;
     height: fit-content;
     border-radius: 10px;
+    box-shadow: 6px 6px 10px #141414;
   }
   .img-conocenos{
     max-height: 400px;
