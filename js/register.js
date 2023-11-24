@@ -99,7 +99,6 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.apellido&&  campos.password && campos.correo  && terminos.checked ){
 		formulario.reset();
